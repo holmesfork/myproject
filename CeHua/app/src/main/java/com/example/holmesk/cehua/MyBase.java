@@ -1,7 +1,6 @@
 package com.example.holmesk.cehua;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -41,7 +40,6 @@ public class MyBase extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        Log.d("abc", list.get(i));
         view = View.inflate(context, android.R.layout.simple_list_item_1, null);
         TextView tv = (TextView) view.findViewById(android.R.id.text1);
         tv.setText(list.get(i));
